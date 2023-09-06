@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task5</title>
+    <style>
+        /* Add styling for the table and form */
+        table {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 400px; /* Adjust the maximum width as needed */
+            margin: 0 auto; /* Center the table horizontally */
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="center">Registration Form</h2>
+    <form action="submit.php" method="POST">
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password:</td>
+                <td><input type="password" name="repassword" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" name="age" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel" name="phone" required></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" name="state" required></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select name="country" required>
+                        <option value="" disabled selected>Choose your country</option>
+                        <option value="usa">USA</option>
+                        <option value="china">china</option>
+                        <option value="uk">UK</option>
+                        <option value="India">India</option>
+                        <option value="Russia">Russia</option>
+                        <option value="France">France</option>
+                        <option value="Spain">Spain</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages Known:</td>
+                <td>
+                    <input type="checkbox" name="languages" value="english"> English<br>
+                    <input type="checkbox" name="languages" value="Hindi"> Hindi<br>
+                    <input type="checkbox" name="languages" value="Kannada"> Kannada<br>
+                    <input type="checkbox" name="languages" value="Telugu"> Telugu<br>
+                </td>
+            </tr>
+                <td><input type="checkbox" name="agree" required>Hereby I declare all the given details are true</td>
+                <td>Log in to <a href="Ethnus">Ethnus</a> website</td>
+            <tr>
+                <td colspan="2" class="center">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
